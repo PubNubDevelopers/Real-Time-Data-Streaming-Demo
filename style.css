@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins';
+    }
+
+a {
+    text-decoration: none;
+}
+
+.btn.show,
+.btn-secondary,
+.btn-pn {
+    background: #33687B;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.btn-secondary:hover,
+.btn-pn:hover {
+    background: #33687B;
+    color: #FFFFFF;
+}
+
+.btn-pn-clear {
+    background: #FFFFFF;
+    border: 1px solid #33687B;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #33687B;
+}
+
+.form-select {
+    border: 1px solid #33687B;
+    border-radius: 8px;
+}
+
+.form-control {
+    border: 1px solid #33687B;
+    border-radius: 8px;
+}
+
+.form-check-input:checked {
+    background-color: #33687B;
+    border-color: #33687B;
+}
+
+    
+.form-range::-webkit-slider-thumb {
+    background-color: #33687B;
+}
+
+.custom-bubble {
+    padding: 4px 16px;
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: #EAF0F6;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #33687B;
+}
+    
+li.cursor-hand {
+    cursor: pointer;
+}
+    
+    

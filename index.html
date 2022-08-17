@@ -1,0 +1,98 @@
+<HTML lang="en">
+<HEAD>  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,
+		initial-scale=1, shrink-to-fit=no" />
+
+        <title>Demos: PubNub Real-Time Data Streaming</title>
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+    <!--  Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- Bootstrap and FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <script defer src="./js/fontawesome/all.min.js"></script>
+
+    <!-- PubNub SDK -->
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.0.1.min.js"></script>
+
+    <!-- Interactive Demo Framework -->
+    <script type="text/javascript" src="https://darryncampbell-pubnub.github.io/pubnub-demo-utils/js/interactive-demo-interface/v1/demo-interface.js"></script>
+
+</HEAD>
+
+<BODY onload="onload();">
+
+<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+
+<!--  Main app body -->
+<div class="container-fluid px-2">
+    <div class="row gy-2 px-2">
+        <div class="col">
+            <div class="row gy-2 px-2 py-2">
+                <div class="container-fluid px-2 py-2">
+
+                    <H1>PubNub Real-Time Data Steaming Demo</H1>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Data Stream
+                            </a>
+                        
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="streamSelect">
+                            </ul>
+                        </div>
+
+
+                        <div class="py-2"><b>Subscribe Key: </b> <small><span id="streamKey"></span> </small></div>
+                        <div class="py-1"><b>Channel Name: </b> <span id="channelName"></span> </div>
+                        <div class="py-1"><b>Description: </b> <span id="description">Select a stream to get started</span></div>
+                        <!--div><a href="https://www.pubnub.com/docs/console/">Open Debug Console</a></div-->
+
+                    </div>
+                    <div class="col">
+                        <div class="float-end" id="code-block">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class=".container px-2 py-0">
+                    <ul class="list-group" id="messageList">
+                      </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </main>
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+        
+    <!-- Application -->
+    <script src="./js/streams.js"></script>
+    <script src="./js/index.js"></script>
+
+</BODY>
+
+</HTML>
