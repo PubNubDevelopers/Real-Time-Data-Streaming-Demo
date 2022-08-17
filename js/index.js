@@ -289,14 +289,14 @@ function clearCodeSnippet()
 
 function demoActionCompleted(currentStream, triggerVal, actionText)
 {
-    if (receivedMessageCount[currentStream] < triggerVal) {
+    if (receivedMessageCount[currentStream] <= triggerVal) {
         receivedMessageCount[currentStream]++;
     }
     else {
         actionCompleted({
             action: actionText,
             blockDuplicateCalls: true,
-            debug: true,
+            debug: false,
         })
     }    
 }
