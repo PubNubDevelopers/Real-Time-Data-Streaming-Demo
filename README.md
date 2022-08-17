@@ -6,6 +6,8 @@
 
 We’ve built sample realtime data streams to make it easy for you to prototype your streaming application.  It is those sample data streams that are consumed by this demo app.
 
+![Screenshot](https://raw.githubusercontent.com/PubNubDevelopers/Real-Time-Data-Streaming-Demo/main/media/wikipedia.png)
+
 ## Demo
 
 A hosted demo version of this application can be seen at XXX
@@ -46,3 +48,16 @@ Checkout the following links for more information on developing chat solutions w
 - Tour of PubNub features: https://www.pubnub.com/tour/introduction/
 - Data streaming use cases: https://www.pubnub.com/use-case/data-broadcasting-and-dashboards/
 
+## Other screenshots
+
+### Twitter
+
+![Screenshot](https://raw.githubusercontent.com/PubNubDevelopers/Real-Time-Data-Streaming-Demo/main/media/twitter.png)
+
+### Game State
+
+![Screenshot](https://raw.githubusercontent.com/PubNubDevelopers/Real-Time-Data-Streaming-Demo/main/media/game_state.png)
+
+### Sensors
+
+![Screenshot](https://raw.githubusercontent.com/PubNubDevelopers/Real-Time-Data-Streaming-Demo/main/media/sensor_network.png)
