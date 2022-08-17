@@ -10,7 +10,7 @@ We’ve built sample realtime data streams to make it easy for you to prototype 
 
 ## Demo
 
-A hosted demo version of this application can be seen at XXX
+A hosted demo version of this application can be seen at https://pubnub.com/demo/real-time-data-streaming/
 
 ## Features
 
