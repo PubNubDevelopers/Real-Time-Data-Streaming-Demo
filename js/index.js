@@ -289,7 +289,7 @@ function clearCodeSnippet()
 
 function demoActionCompleted(currentStream, triggerVal, actionText)
 {
-    if (receivedMessageCount[currentStream] <= triggerVal) {
+    if (receivedMessageCount[currentStream] < triggerVal - 1) {
         receivedMessageCount[currentStream]++;
     }
     else {
