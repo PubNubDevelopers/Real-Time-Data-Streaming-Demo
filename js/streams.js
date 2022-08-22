@@ -11,14 +11,14 @@ var streams = {
             "id":"twitter",
             "name":"Twitter Stream (Live)",
             "description":"A real-time stream of actual messages on Twitter.  For readability, capped at 10 tweets per second.",
-            "subKey": "sub-c-78806dd4-42a6-11e4-aed8-02ee2ddab7fe",
+            "subKey": "sub-c-d00e0d32-66ac-4628-aa65-a42a1f0c493b",
             "channel":"pubnub-twitter"
         },
         {
             "id":"wikipedia",
             "name":"Wikipedia Changes (Live)",
             "description": "This data stream provides any recent modifications to the database of Wikipedia articles, in all languages and categories.",
-            "subKey": "sub-c-b0d14910-0601-11e4-b703-02ee2ddab7fe",
+            "subKey": "sub-c-83a959c1-2a4f-481b-8eb0-eab514c06ebf",
             "channel": "pubnub-wikipedia"
         },
         {
