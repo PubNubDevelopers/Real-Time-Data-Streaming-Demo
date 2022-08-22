@@ -2,7 +2,6 @@
     "features": [
       "Receive 50 Twitter messages",
       "Receive 7 Wikipedia changes",
-      "Receive 1 Hacker News update",
       "Receive 30 Game State updates",
       "Receive 25 Sensor readings",
       "Receive 15 Market orders"

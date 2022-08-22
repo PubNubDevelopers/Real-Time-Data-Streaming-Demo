@@ -80,10 +80,6 @@ function onStreamSelect(selectedStream)
                 currentListener = {message: payload => {addFormattedMessageWikipedia(payload)}};
                 pubnub.addListener(currentListener);
                 break;
-            case "hackernews":
-                currentListener = {message: payload => {addFormattedMessageHackerNews(payload)}};
-                pubnub.addListener(currentListener);
-                break;
             case "gamestate":
                 currentListener = {message: payload => {addFormattedMessageGameState(payload)}};
                 pubnub.addListener(currentListener);
@@ -154,33 +150,6 @@ function addFormattedMessageWikipedia(payload)
     capElements();
 }
 
-function addFormattedMessageHackerNews(payload)
-{
-    console.log(payload);
-    var li = document.createElement('li');
-    li.setAttribute('class', 'list-group-item');
-    var outputHtml = "";
-    outputHtml += "<b>Source: </b>Hacker News Articles <i class='fa-brands fa-hacker-news fa-2xl' style='float:right'></i><br>";
-    for (var i = 0; i < payload.message.length; i++)
-    {
-        outputHtml += "<b>Rank: </b>" + payload.message[i].rank + "<br>";
-        outputHtml += "<b>Title: </b>" + payload.message[i].title + "<br>";
-        outputHtml += "<b>Article: </b><a href='" + payload.message[i].link + "' target='new'>" + payload.message[i].link + "</a><br>";
-        outputHtml += "<b>Comments: </b><a href='" + payload.message[i].comments + "' target='new'>" + payload.message[i].comments + "</a><br><br>";
-    }
-    outputHtml += "<b>Timestamp: </b>" + new Date(payload.timetoken / 10000);
-    li.innerHTML = outputHtml;
-
-    var list = document.getElementById('messageList');
-    list.insertBefore(li, list.firstChild);
-
-    //  Interactive Demo only
-    demoActionCompleted(currentStream, 1, 'Receive 1 Hacker News update');
-    //  End Interactive Demo only
-        
-    capElements();
-}
-
 function addFormattedMessageGameState(payload)
 {
     console.log(payload);
@@ -214,8 +183,8 @@ function addFormattedMessageSensorNetwork(payload)
     outputHtml += "<b>Source: </b>Sensor Network <i class='fa-solid fa-temperature-half fa-2xl' style='float:right'></i><br>";
     outputHtml += "<b>Ambient Temperature: </b>" + payload.message.ambient_temperature + " °c<br>";
     outputHtml += "<b>Humidity: </b>" + payload.message.humidity + " %<br>";
-    outputHtml += "<b>Photosensor: </b>" + payload.message.photosensor + " lm<br>";
-    outputHtml += "<b>Radiation level: </b>" + payload.message.radiation_level + " Sv<br>";
+    outputHtml += "<b>Photosensor: </b>" + payload.message.photosensor + " w/m<sup>2</sup><br>";
+    outputHtml += "<b>Radiation level: </b>" + payload.message.radiation_level + " millirads/hr<br>";
     outputHtml += "<b>Sensor ID: </b>" + payload.message.sensor_uuid + "<br>";
     outputHtml += "<b>Timestamp: </b>" + new Date(payload.timetoken / 10000);
     li.innerHTML = outputHtml;
