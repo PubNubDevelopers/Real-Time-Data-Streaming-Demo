@@ -1,5 +1,6 @@
 {
     "features": [
+      "Receive 50 Twitter messages",
       "Receive 7 Wikipedia changes",
       "Receive 30 Game State updates",
       "Receive 25 Sensor readings",
