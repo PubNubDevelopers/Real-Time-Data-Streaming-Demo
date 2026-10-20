@@ -64,7 +64,7 @@ function onStreamSelect (selectedStream) {
     }
 
     pubnub = new PubNub({
-      uuid: 'RealTimeDemo',
+      userId: 'RealTimeDemo',
       subscribeKey: streams.stream[currentStream].subKey
     })
     switch (streams.stream[currentStream].id) {
@@ -297,7 +297,7 @@ function showCodeSnippet (subKey, channelName) {
   var code =
     "<code><small><pre>\
 var pubnub = new PubNub({ \n\
-  uuid: 'MyIdentifier', \n\
+  userId: 'MyIdentifier', \n\
   subscribeKey: \n\
     '" +
     subKey +
